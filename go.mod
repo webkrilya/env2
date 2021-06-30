@@ -1,4 +1,4 @@
-module github.com/webkrilya/envreader
+module github.com/webkrilya/envr
 
 go 1.16
 
