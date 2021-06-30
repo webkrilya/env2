@@ -1,4 +1,4 @@
-module envreader
+module github.com/webkrilya/envreader
 
 go 1.16
 
