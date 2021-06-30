@@ -1,4 +1,4 @@
-package envreader
+package main
 
 import (
 	"github.com/kardianos/osext"
