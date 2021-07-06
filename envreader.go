@@ -36,7 +36,7 @@ func ReadEnv() map[string]string {
 
 		pos := strings.Index(v,"=")
 		if pos>-1{
-			Env[strings.TrimSpace(v[:pos])] = strings.TrimSpace(v[pos:])
+			Env[strings.TrimSpace(v[:pos])] = strings.TrimSpace(v[pos+1:])
 		}
 	}
 

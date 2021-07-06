@@ -6,5 +6,9 @@ import (
 )
 
 func TestEnv(t *testing.T) {
-	fmt.Println(ReadEnv())
+	x:=ReadEnv()
+	for k,v:=range x{
+		fmt.Println(k)
+		fmt.Println(v)
+	}
 }
