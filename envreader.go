@@ -33,11 +33,10 @@ func ReadEnv() map[string]string {
 		if v == "" || strings.Index(v, "#") == 0 {
 			continue
 		}
-		pair := strings.Split(v, "=")
-		if len(pair) == 2 {
-			pair[0] = strings.TrimSpace(pair[0])
-			pair[1] = strings.TrimSpace(pair[1])
-			Env[pair[0]] = pair[1]
+
+		pos := strings.Index(v,"=")
+		if pos>-1{
+			Env[strings.TrimSpace(v[:pos])] = strings.TrimSpace(v[pos:])
 		}
 	}
 
