@@ -1,4 +1,4 @@
-module github.com/webkrilya/env2
+module github.com/webkrilya/envM
 
 go 1.16
 
