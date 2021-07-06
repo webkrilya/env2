@@ -1,4 +1,4 @@
-module github.com/webkrilya/envr
+module github.com/webkrilya/env2
 
 go 1.16
 
